@@ -1,0 +1,634 @@
+/* CSS (styles.css) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('W/wa.jpg');
+  background-size: cover;
+  color: #fff;
+}
+
+/* Container to hold image and text */
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  /* Aligns the image and text at the top */
+  gap: 20px;
+  /* Adds space between the image and text */
+}
+
+/* Style for the image */
+.side-image {
+  width: 20% !important;
+  /* Enforced reduced size */
+  height: auto !important;
+  /* Maintains aspect ratio */
+  max-width: 50% !important;
+  /* Ensures it doesn’t exceed container size */
+}
+
+.text-content p {
+  text-align: justify;
+  /* Membuat teks rata kanan-kiri */
+  margin: 0 0 1em 0;
+}
+
+.linear-text-gradient {
+  background: linear-gradient(70deg, #ccffff, #5c81c1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(180deg, #ccffff, #2a5298);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  /* Menambahkan jarak bawah */
+}
+
+h3 {
+  color: #5c81c1;
+  font-weight: bold;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ccffff;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2a5298;
+}
+
+.nav-button {
+  background-color: #5c81c1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #666;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  background-color: #eaeaea;
+}
+
+.tab {
+  background-color: #2a5298;
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.content-box h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.content-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.content-box p {
+  line-height: 1.6;
+}
+
+.content-box {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.news-item img {
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.news-time {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.news-item p {
+  color: #5c81c1;
+}
+
+.scroll-container {
+  max-height: 400px;
+  /* Sesuaikan dengan tinggi yang diinginkan */
+  overflow-y: scroll;
+}
+
+#achievement {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#achievement h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.achievement-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.achievement-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-image {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 0;
+}
+
+.achievement-card p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* CSS untuk modal gambar besar */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+}
+
+.modal-content,
+.close {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Project */
+.project-section {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0f122a3e, #1e293b4a);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.project-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+
+.project-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+}
+
+.project-modal {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  width: 350px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  animation: fadeInScale 0.4s ease;
+}
+
+.project-modal h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.project-modal p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background: #38bdf8;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #0ea5e9;
+  color: #fff;
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #072f7c;
+  color: #a4c6ee;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.official-x {
+  margin-bottom: 20px;
+}
+
+.official-x h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.social-btn img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.social-btn .text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-btn .text-container span {
+  font-size: 14px;
+}
+
+.social-btn .text-container .username {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.social-btn:hover {
+  background: white;
+  color: blue;
+}
+
+.share-links p {
+  margin-top: 10px;
+}
+
+.share-links img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #a4c6ee;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* Centers the nav horizontally */
+  align-items: center;
+  /* Centers the nav vertically */
+  height: auto;
+  /* Ensures nav only takes as much height as necessary */
+}
+
+/*comment*/
+
+.project-comment {
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.project-comment h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: gold;
+  letter-spacing: 2px;
+}
+
+.comment-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.comment {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+
+.comment:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.comment strong {
+  color: gold;
+}
+
+.comment-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.comment-form input,
+.comment-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.comment-form input {
+  flex: 1;
+  outline: none;
+}
+
+.comment-form button {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comment-form button:hover {
+  background: orange;
+}

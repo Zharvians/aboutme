@@ -1,0 +1,385 @@
+<!-- HTML (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="profil.css">
+    <script defer src="profil.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Muhammad Ade Ramadhani</h1>
+        <div class="social">
+            <td> TT : <a href="https://www.tiktok.com/@kazuya_nakayama?lang=en">nakayama_kazuya</a></td>
+            <td> IG : <a href="https://www.instagram.com/nakayama_kazuya_/">kazuya_nakayama_</a></td>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-button" onclick="showTab('home')">Home</button>
+        <button class="nav-button" onclick="showTab('books')">E-Books</button>
+        <button class="nav-button" onclick="showTab('contact')">Contact</button>
+        <button class="nav-button" onclick="showTab('achievement')">Achievement</button>
+        <button class="nav-button" onclick="showTab('project')">Project</button>
+        <button class="nav-button" onclick="showTab('comment')">Comments</button>
+    </div>
+
+    <div class="content">
+        <div class="tab-content" id="home">
+            <h2>PROFIL</h2>
+            <div class="content-container">
+                <img src="W/ya.jpg" alt="12" class="side-image">
+                <div class="text-content">
+                    <p class="linear-text-gradient">Hello, my name is Muhammad Ade Ramadhani. I’m from Banjarmasin and
+                        was born on October 8, 2005. I am currently studying Information Technology at Universitas Islam
+                        Negeri Antasari Banjarmasin, within the Faculty of Dakwah and Communication Sciences. My big
+                        goal is to become financially successful. For me, <i>"if others can achieve something, why can’t
+                            I?"</i></p>
+
+                    <p class="linear-text-gradient">I enjoy playing badminton and listening to music; these hobbies
+                        always keep my days energized. I have a special liking for yellow rice as my favorite food, iced
+                        tea as my go-to drink, and chips as my favorite snack. With blood type O, I’m known for being
+                        open and adaptable. While I don’t have many notable achievements yet, I’m constantly motivated
+                        to keep improving.</p>
+
+                    <p class="linear-text-gradient">By the way, I’m currently single, making the most of my youth by
+                        studying and occasionally playing games.............</p>
+                </div>
+            </div>
+            <div class="tab-container">
+                <!-- Tabs Section -->
+                <div class="tabs">
+                    <div class="tab active" onclick="openTab(event, 'tab1')">MY DAILY LIFE ON CAMPUS</div>
+                    <div class="tab" onclick="openTab(event, 'tab2')">MY RANDOM DAILY LIFE</div>
+                </div>
+                <!-- Content Box Section -->
+                <div class="content-box active-content" id="tab1" style="text-align: left;">
+                    <div class="scroll-container">
+                        <div class="news-item">
+                            <img src="Daily/lokal.JPG" alt="News Image" onclick="openModal('Daily/lokal.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto Bersama Mahasiswa TI Lokal A</p>
+                                <p class="news-time">Selasa, 30 September 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/maulid.jpg" alt="News Image" onclick="openModal('Daily/maulid.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto Ketika Mengikuti Maulid Nabi Besar Muhammad SAW bersama Prof.
+                                    Dr. H. Mujiburrahman, MA</p>
+                                <p class="news-time">Senin, 22 September 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/stadium.jpg" alt="News Image" onclick="openModal('Daily/stadium.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto Ketika Mengikuti Stadium Generale yang dihadiri Al Habib
+                                    Salim</p>
+                                <p class="news-time">Rabu, 10 September 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/usaha.jpg" alt="News Image" onclick="openModal('Daily/usaha.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto Bersama Setelah Pembelajaran Kewirausahaan</p>
+                                <p class="news-time">Kamis, 6 Maret 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/makrab.jpg" alt="News Image" onclick="openModal('Daily/makrab.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti kegiatan Malam Kearaban TI </p>
+                                <p class="news-time">Kamis, 7 November 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/2.jpg" alt="News Image" onclick="openModal('Daily/2.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti kegiatan Makan Bersama yang dihadiri bapak
+                                    La Taati yang merupakan Kepala Pengelolaan Tata Batas BPKH Wilayah V Banjarbaru</p>
+                                <p class="news-time">Jum'at, 1 November 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/3.jpg" alt="News Image" onclick="openModal('Daily/3.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti seminar Nasional yang dihadiri Ustadz Yanor
+                                    Kelua</p>
+                                <p class="news-time">Senin, 28 Oktober 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/7.jpg" alt="News Image" onclick="openModal('Daily/7.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti Maulid Nabi Muhammad sekaligus Stadium
+                                    Generale yang dihadiri Ustadz H.Ilham Humaidi</p>
+                                <p class="news-time">Kamis, 26 September 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/4.jpg" alt="News Image" onclick="openModal('Daily/4.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti seminar Internasional bersama Prof. Dr.
+                                    Azlan Kamari asal Malaysia</p>
+                                <p class="news-time">Rabu, 11 September 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/9.jpg" alt="News Image" onclick="openModal('Daily/9.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti Milad Kamush ke-11 </p>
+                                <p class="news-time">Sabtu, 22 Juni 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/5.jpg" alt="News Image" onclick="openModal('Daily/5.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti pembelajaran bersama Ibu Hanifah yang
+                                    merupakan ketua dinas Lingkungan Hidup Kalimantan Selatan</p>
+                                <p class="news-time">Rabu, 12 Juni 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/10.jpg" alt="News Image" onclick="openModal('Daily/10.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto ketika mengikuti Halal Bihalal bersama Dosen-dosen TI </p>
+                                <p class="news-time">Kamis, 25 April 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box" id="tab2">
+                    <div class="scroll-container">
+                        <div class="news-item">
+                            <img src="Daily/pantai1.jpg" alt="News Image" onclick="openModal('Daily/pantai1.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Pantai Lagi dan Lagi</p>
+                                <p class="news-time">Minggu, 29 Juni 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/coa.jpg" alt="News Image" onclick="openModal('Daily/coa.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Nemu game mmo yang seru pas liburan bjir</p>
+                                <p class="news-time">Selasa, 17 Juni 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/siring.jpg" alt="News Image" onclick="openModal('Daily/siring.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Liburan semester gabut mending ke siring pas pagi</p>
+                                <p class="news-time">Minggu, 25 Mei 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/mall.jpg" alt="News Image" onclick="openModal('Daily/mall.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Abis kenikahan mending jalan2 ke mall</p>
+                                <p class="news-time">Minggu, 27 April 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/nikahan1.jpg" alt="News Image" onclick="openModal('Daily/nikahan1.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Bjir temenku udh nikah</p>
+                                <p class="news-time">Minggu, 27 April 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/Id.jpg" alt="News Image" onclick="openModal('Daily/Id.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Jalan-jalan dlu abis Hari Raya Idul Fitri</p>
+                                <p class="news-time">Selasa, 1 April 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/wb.jpg" alt="News Image" onclick="openModal('Daily/wb.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Liburan dulu skuy</p>
+                                <p class="news-time">Minggu, 15 Desember 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/pantai.jpg" alt="News Image" onclick="openModal('Daily/pantai.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Ceritanya lagi menikmati sunset</p>
+                                <p class="news-time">Rabu, 6 November 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/1.jpg" alt="News Image" onclick="openModal('Daily/.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Ayo main genshin</p>
+                                <p class="news-time">Minggu, 3 November 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/8.jpg" alt="News Image" onclick="openModal('Daily/8.jpg')">>
+                            <div class="news-content">
+                                <p class="news-title">Intinya nonton</p>
+                                <p class="news-time">kamis, 9 Mei 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="books" style="display: none;">
+            <h2><strong>E-BOOKS</strong></h2>
+            <p>No Content for e-books.</p>
+        </div>
+        <div class="tab-content" id="contact">
+            <main>
+                <h2><strong>MY CONTACT</strong></h2>
+                <form id="contactForm" onsubmit="sendMessage(event)">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message : </label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </main>
+        </div>
+        <div class="tab-content" id="achievement" style="display: block;">
+            <h2><strong>SERTIFIKAT</strong></h2>
+            <div class="achievement-cards">
+                <div class="achievement-card">
+                    <img src="Achievement/studium1.jpg" alt="1" class="achievement-image"
+                        onclick="openModal('Achievement/studium1.jpg')">>
+                    <h3>Mengikuti Seminar Nasional</h3>
+                    <p>26 September 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="Achievement/seminar.jpg" alt="2" class="achievement-image"
+                        onclick="openModal('Achievement/seminar.jpg')">
+                    <h3>Mengikuti Seminar Internasional</h3>
+                    <p>11 September 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="Achievement/studium.jpg" alt="3" class="achievement-image"
+                        onclick="openModal('Achievement/studium.jpg')">
+                    <h3>Mengikuti Seminar Nasional</h3>
+                    <p>24 April 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="Achievement/lomba.jpg" alt="4" class="achievement-image"
+                        onclick="openModal('Achievement/lomba.jpg')">
+                    <h3>Mengikuti Lomba Cetozz Banjarmasin</h3>
+                    <p>24 November 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="project" style="display: block;">
+            <section class="project-section">
+                <div class="project-header">
+                    <h2 class="project-title">My Projects</h2>
+                    <p class="project-subtitle">Kumpulan Project Project Yang Sudah Pernah dibuat</p>
+                </div>
+
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Project/Pro1.png" alt="Project 1" onclick="openModal('Project/Pro1.png')">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Novel Store</h3>
+                            <p class="project-desc">Situs beli E-Novel yang dibuat oleh novelis yang sudah membuat
+                                kontrak dengan LunarScribe.
+                            </p>
+                            <a href="https://lunarscribestudios.github.io/LunarScribe/" class="project-btn">View
+                                Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Project/iot.jpg" alt="Project 2" onclick="openModal('Project/iot.jpg')">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Termometer</h3>
+                            <p class="project-desc">Membuat termometer menggunakan esp yang ip nya dikirim ke user
+                                interface</p>
+                            <a href="#" class="project-btn" onclick="showComingSoon()">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Project/mikro.jpg" alt="Project 3" onclick="openModal('Project/mikro.jpg')">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Sensor</h3>
+                            <p class="project-desc">Membuat pintu otomatis menggunakan sensor gerakan, yang dimana saat
+                                didekati maka akan terbuka dan sebaliknya</p>
+                            <a href="#" class="project-btn" onclick="showComingSoon()">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="project-overlay" id="projectOverlay">
+                <div class="project-modal">
+                    <h2>Coming Soon</h2>
+                    <p>Project Ini Sedang Dalam Pengembangan, Nantikan Infonya!</p>
+                    <button onclick="closeComingSoon()" class="close-btn">OK</button>
+                </div>
+            </div>
+        </div>
+    <!-- Modal untuk gambar besar -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="official-x">
+            <h3>★ Official LunarScribe ★</h3>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@zharvian?lang=en" class="social-btn">
+                    <img src="W/zharv.jpg" alt="tiktok1">
+                    <div class="text-container">
+                        <span>Social Media – Tiktok</span>
+                        <span class="username">@Zharvian</span>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/zharvian?igsh=MWc5d2tneThjeTMzeA==" class="social-btn">
+                    <img src="W/zharv.jpg" alt="instagram2">
+                    <div class="text-container">
+                        <span>Social Media – Instagram</span>
+                        <span class="username">@Zharvian</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="share-links">
+            <p>SHARE</p>
+            <a href="#" onclick="share('x')"><img src="W/x.png" alt="X"></a>
+            <a href="#" onclick="share('ig')"><img src="W/ig.png" alt="IG"></a>
+            <a href="#" onclick="share('tt')"><img src="W/tt.png" alt="TIKTOK"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Zharvian</a>
+            <a href="#">Furina</a>
+            <a href="#">Indonesian</a>
+            <a href="#">English</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; Zharvian - Muhammad Ade Ramadhani</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
