@@ -14,18 +14,18 @@
     <div class="header">
         <h1>Muhammad Ade Ramadhani</h1>
         <div class="social">
-            <td> TT : <a href="https://www.tiktok.com/@kazuya_nakayama?lang=en">nakayama_kazuya</a></td>
-            <td> IG : <a href="https://www.instagram.com/nakayama_kazuya_/">kazuya_nakayama_</a></td>
+            <td> TT : <a href="https://www.tiktok.com/@zharvian?lang=en">Zharvian</a></td>
+            <td> IG : <a href="https://www.instagram.com/zharvian/">Zharvian</a></td>
         </div>
     </div>
 
     <div class="navigation">
         <button class="nav-button" onclick="showTab('home')">Home</button>
-        <button class="nav-button" onclick="showTab('books')">Achievement</button>
-        <button class="nav-button" onclick="showTab('contact')">Contact</button>
-        <button class="nav-button" onclick="showTab('achievement')">Certificate</button>
+        <button class="nav-button" onclick="showTab('achievement')">Achievement</button>
+        <button class="nav-button" onclick="showTab('certificate')">Certificate</button>
         <button class="nav-button" onclick="showTab('project')">Project</button>
-        <button class="nav-button" onclick="showTab('comment')">Comments</button>
+        <button class="nav-button" onclick="showTab('family')">Family</button>
+        <button class="nav-button" onclick="showTab('photo')">Photo</button>
     </div>
 
     <div class="content">
@@ -57,13 +57,69 @@
                     <div class="tab" onclick="openTab(event, 'tab2')">MY RANDOM DAILY LIFE</div>
                 </div>
                 <!-- Content Box Section -->
-                <div class="content-box active-content" id="tab1" style="text-align: left;">
+                <div class="content-box active-content" id="tab1">
                     <div class="scroll-container">
+                        <div class="news-item">
+                            <img src="Daily/viewer.png" alt="News Image" onclick="openModal('Daily/viewer.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Belajar Menggunakan VOSviewer</p>
+                                <p class="news-time">Jum'at, 24 April 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/GEE.png" alt="News Image" onclick="openModal('Daily/GEE.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Belajar Memetakan Wilayah Menggunakan GEE</p>
+                                <p class="news-time">Selasa, 3 Maret 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/smart.png" alt="News Image" onclick="openModal('Daily/smart.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Presentasi Smart Governance di Matkul Teknologi Kota Cerdas</p>
+                                <p class="news-time">Rabu, 25 Februari 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/SG.png" alt="News Image" onclick="openModal('Daily/SG.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Mengikuti Stadium Generale yang dihadiri Dr. Gusti Yasser Arafat, S.S., S.Pd., MA</p>
+                                <p class="news-time">Selasa, 10 Februari 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/pakar.png" alt="News Image" onclick="openModal('Daily/pakar.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Mengikuti Kuliah Pakar TI yang dihadiri Kepala LP2M UNLAM</p>
+                                <p class="news-time">Senin, 12 Januari 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/steve.png" alt="News Image" onclick="openModal('Daily/steve.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Presentasi Tokoh Berpengaruh Di Bidang Teknologi</p>
+                                <p class="news-time">Kamis, 11 Desember 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/wse.png" alt="News Image" onclick="openModal('Daily/wse.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Presentasi Project Web Service Engineering</p>
+                                <p class="news-time">Senin, 27 Oktober 2025</p>
+                            </div>
+                        </div>
                         <div class="news-item">
                             <img src="Daily/lokal.JPG" alt="News Image" onclick="openModal('Daily/lokal.jpg')">>
                             <div class="news-content">
                                 <p class="news-title">Foto Bersama Mahasiswa TI Lokal A</p>
                                 <p class="news-time">Selasa, 30 September 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/pm.png" alt="News Image" onclick="openModal('Daily/pm.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Mengerjakan Proyek Android Studio dan Mikrokontroler</p>
+                                <p class="news-time">Senin, 22 September 2025</p>
                             </div>
                         </div>
                         <div class="news-item">
@@ -129,6 +185,13 @@
                             </div>
                         </div>
                         <div class="news-item">
+                            <img src="Daily/arduino.png" alt="News Image" onclick="openModal('Daily/arduino.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto Ketika Belajar Menggunakan Arduino</p>
+                                <p class="news-time">Senin, 9 September 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
                             <img src="Daily/9.jpg" alt="News Image" onclick="openModal('Daily/9.jpg')">>
                             <div class="news-content">
                                 <p class="news-title">Foto ketika mengikuti Milad Kamush ke-11 </p>
@@ -140,7 +203,21 @@
                             <div class="news-content">
                                 <p class="news-title">Foto ketika mengikuti pembelajaran bersama Ibu Hanifah yang
                                     merupakan ketua dinas Lingkungan Hidup Kalimantan Selatan</p>
-                                <p class="news-time">Rabu, 12 Juni 2024</p>
+                                <p class="news-time">Kamis, 13 Juni 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/Project.png" alt="News Image" onclick="openModal('Daily/Project.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Belajar Hal Baru</p>
+                                <p class="news-time">Rabu, 5 Juni 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/asrama.png" alt="News Image" onclick="openModal('Daily/asrama.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Foto Perpisahan Terakhir Penghuni Asrama</p>
+                                <p class="news-time">Selasa, 7 Mei 2024</p>
                             </div>
                         </div>
                         <div class="news-item">
@@ -154,6 +231,62 @@
                 </div>
                 <div class="content-box" id="tab2">
                     <div class="scroll-container">
+                        <div class="news-item">
+                            <img src="Daily/update.png" alt="News Image" onclick="openModal('Daily/update.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Baru Ingat Ama Websitenya, Jadi Update Dulu :v</p>
+                                <p class="news-time">Sabtu, 26 April 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/mcgg.png" alt="News Image" onclick="openModal('Daily/mcgg.png')">>
+                            <div class="news-content">
+                                <p class="news-title">MCGG Game Gampang Ternyata</p>
+                                <p class="news-time">Kamis, 23 April 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/malming.png" alt="News Image" onclick="openModal('Daily/malming.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Malming Duluh</p>
+                                <p class="news-time">Sabtu, 04 April 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/lebaran.png" alt="News Image" onclick="openModal('Daily/lebaran.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Ga Kerasa Udah Lebaran Lagi dan Berkunjung Ke makam nenek :)</p>
+                                <p class="news-time">Sabtu, 21 Maret 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/Immo.png" alt="News Image" onclick="openModal('Daily/Immo.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Akhirnya Immo Juga</p>
+                                <p class="news-time">Senin, 9 Maret 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/setup.png" alt="News Image" onclick="openModal('Daily/setup.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Set Up Meja Dulu ygy</p>
+                                <p class="news-time">Sabtu, 1 Maret 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/gacoan.png" alt="News Image" onclick="openModal('Daily/gacoan.png')">>
+                            <div class="news-content">
+                                <p class="news-title">First Time Makan Gacoan</p>
+                                <p class="news-time">Sabtu, 7 Februari 2026</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/gacoan.png" alt="News Image" onclick="openModal('Daily/gacoan.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Pulang Kuliah dan Ngelewati Bandara Tiap Hari</p>
+                                <p class="news-time">Kamis, 8 Januari 2026</p>
+                            </div>
+                        </div>
                         <div class="news-item">
                             <img src="Daily/pantai1.jpg" alt="News Image" onclick="openModal('Daily/pantai1.jpg')">>
                             <div class="news-content">
@@ -197,6 +330,13 @@
                             </div>
                         </div>
                         <div class="news-item">
+                            <img src="Daily/FF.png" alt="News Image" onclick="openModal('Daily/FF.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Anjay EZ Game</p>
+                                <p class="news-time">Jum'at, 28 Februari 2025</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
                             <img src="Daily/wb.jpg" alt="News Image" onclick="openModal('Daily/wb.jpg')">>
                             <div class="news-content">
                                 <p class="news-title">Liburan dulu skuy</p>
@@ -211,75 +351,312 @@
                             </div>
                         </div>
                         <div class="news-item">
-                            <img src="Daily/1.jpg" alt="News Image" onclick="openModal('Daily/.jpg')">>
+                            <img src="Daily/1.jpg" alt="News Image" onclick="openModal('Daily/1.jpg')">>
                             <div class="news-content">
                                 <p class="news-title">Ayo main genshin</p>
                                 <p class="news-time">Minggu, 3 November 2024</p>
                             </div>
                         </div>
                         <div class="news-item">
+                            <img src="Daily/makan3.png" alt="News Image" onclick="openModal('Daily/makan3.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Tiada Hari Tanpa Makan Gratis</p>
+                                <p class="news-time">Jum'at, 1 November 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/taman.png" alt="News Image" onclick="openModal('Daily/taman.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Jalan-jalan Ke Taman Bermain??</p>
+                                <p class="news-time">Minggu, 14 Juli 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/bakar1.png" alt="News Image" onclick="openModal('Daily/bakar1.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Bakar-bakaran Daging Sapi</p>
+                                <p class="news-time">Kamis, 20 Juni 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/makan2.png" alt="News Image" onclick="openModal('Daily/makan2.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Siapa yang Bisa Menolak Makanan Gratis Ini :v</p>
+                                <p class="news-time">Kamis, 13 Juni 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/berangkat.png" alt="News Image" onclick="openModal('Daily/berangkat.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Berangkat UPB di Pagi Hari Setelah Hujan</p>
+                                <p class="news-time">Kamis, 30 Mei 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/main2.png" alt="News Image" onclick="openModal('Daily/main2.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Bersenang-senang di UPB Bahasa Inggris</p>
+                                <p class="news-time">Rabu, 22 Mei 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/makan1.png" alt="News Image" onclick="openModal('Daily/makan1.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Anjay Makan Gratis</p>
+                                <p class="news-time">Kamis, 16 Mei 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/jalan.png" alt="News Image" onclick="openModal('Daily/jalan.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Jalan-jalan lagi Merayakan Bebas dari Asrama</p>
+                                <p class="news-time">Minggu, 12 Mei 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
                             <img src="Daily/8.jpg" alt="News Image" onclick="openModal('Daily/8.jpg')">>
                             <div class="news-content">
-                                <p class="news-title">Intinya nonton</p>
-                                <p class="news-time">kamis, 9 Mei 2024</p>
+                                <p class="news-title">Merayakan Bebas dari Asrama dengan Nonton</p>
+                                <p class="news-time">Kamis, 9 Mei 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/bakar.png" alt="News Image" onclick="openModal('Daily/bakar.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Bakar-bakaran di Malam Terakhir Asrama</p>
+                                <p class="news-time">Senin, 6 Mei 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/lebaran2024.png" alt="News Image" onclick="openModal('Daily/lebaran2024.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Pertama Kali ke Makam Nenek di Hari Pertama Lebaran</p>
+                                <p class="news-time">Rabu, 10 April 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/Bukber1.png" alt="News Image" onclick="openModal('Daily/Bukber1.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Buka Bersama Anggota Antasari no Mirai</p>
+                                <p class="news-time">Kamis, 28 Maret 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/Bukber.png" alt="News Image" onclick="openModal('Daily/Bukber.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Ikut Buka Bersama di Masjid Terdekat Kampus</p>
+                                <p class="news-time">Jum'at, 15 Maret 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/wafat.png" alt="News Image" onclick="openModal('Daily/wafat.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Menemani Nenek ke Tempat Peristirahatan Terakhirnya</p>
+                                <p class="news-time">Kamis, 29 Februari 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/makan.png" alt="News Image" onclick="openModal('Daily/makan.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Makan Bersama di Asrama Yang Sangat Amat Panas</p>
+                                <p class="news-time">Minggu, 25 Februari 2024</p>
+                            </div>
+                        </div>
+                        <div class="news-item">
+                            <img src="Daily/nugas.png" alt="News Image" onclick="openModal('Daily/nugas.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Nugas Bareng di Kamar Kecil Asrama</p>
+                                <p class="news-time">Rabu, 21 Februari 2024</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="tab-content" id="books" style="display: none;">
-            <h2><strong>E-BOOKS</strong></h2>
-            <p>No Content for e-books.</p>
-        </div>
-        <div class="tab-content" id="contact">
-            <main>
-                <h2><strong>MY CONTACT</strong></h2>
-                <form id="contactForm" onsubmit="sendMessage(event)">
-                    <label for="name">Name : </label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email : </label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message : </label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-            </main>
-        </div>
-        <div class="tab-content" id="achievement" style="display: block;">
-            <h2><strong>MY CERTIFICATE</strong></h2>
+        <div class="tab-content" id="achievement">
+            <h2><strong>MY ACHIEVEMENT</strong></h2>
             <div class="achievement-cards">
                 <div class="achievement-card">
-                    <img src="Achievement/studium1.jpg" alt="1" class="achievement-image"
-                        onclick="openModal('Achievement/studium1.jpg')">>
-                    <h3>Mengikuti Seminar Nasional</h3>
-                    <p>26 September 2024</p>
+                    <img src="Achievement/achiev1.png" alt="1" class="certificate-image"
+                        onclick="openModal('Achievement/achiev1.png')">>
+                    <h3>Menang Lomba Mengedit Yang Diadakan Team Navi</h3>
+                    <p>5 Februari 2026</p>
                 </div>
                 <div class="achievement-card">
-                    <img src="Achievement/seminar.jpg" alt="2" class="achievement-image"
-                        onclick="openModal('Achievement/seminar.jpg')">
-                    <h3>Mengikuti Seminar Internasional</h3>
-                    <p>11 September 2024</p>
+                    <img src="Achievement/achiev3.png" alt="3" class="certificate-image"
+                        onclick="openModal('Achievement/achiev3.png')">
+                    <h3>Membuat Komunitas Di Discord Dengan Ratusan Member</h3>
+                    <p>10 September 2025</p>
                 </div>
                 <div class="achievement-card">
-                    <img src="Achievement/studium.jpg" alt="3" class="achievement-image"
-                        onclick="openModal('Achievement/studium.jpg')">
-                    <h3>Mengikuti Seminar Nasional</h3>
-                    <p>24 April 2024</p>
+                    <img src="Achievement/achiev2.png" alt="2" class="certificate-image"
+                        onclick="openModal('Achievement/achiev2.png')">
+                    <h3>Menang Lomba Building Yang Diadakan Game Jungojam</h3>
+                    <p>25 April 2025</p>
                 </div>
                 <div class="achievement-card">
-                    <img src="Achievement/lomba.jpg" alt="4" class="achievement-image"
-                        onclick="openModal('Achievement/lomba.jpg')">
-                    <h3>Mengikuti Lomba Cetozz Banjarmasin</h3>
-                    <p>24 November 2022</p>
+                    <img src="Achievement/achiev4.png" alt="4" class="certificate-image"
+                        onclick="openModal('Achievement/achiev4.png')">
+                    <h3>Membuat Media Sosial Dengan Belasan Ribu Pengikut</h3>
+                    <p>1 Februari 2022</p>
                 </div>
             </div>
         </div>
-
-        <div class="tab-content" id="project" style="display: block;">
+        <div class="tab-content" id="family">
+            <h2><strong>MY FAMILY</strong></h2>
+            <div class="family-cards">
+                <div class="family-card">
+                    <img src="Family/rama.png" alt="1" class="family-image"
+                        onclick="openModal('Family/rama.png')">>
+                    <h3>Muhammad Ade Ramadhani</h3>
+                </div>
+                <div class="family-card">
+                    <img src="Family/nisa.png" alt="2" class="family-image"
+                        onclick="openModal('Family/nisa.png')">
+                    <h3>Raudatunnisa</h3>
+                </div>
+                <div class="family-card">
+                    <img src="Family/putri.png" alt="3" class="family-image"
+                        onclick="openModal('Family/putri.png')">
+                    <h3>Putri Rahmawati</h3>
+                </div>
+                <div class="family-card">
+                    <img src="Family/zahra.png" alt="4" class="family-image"
+                        onclick="openModal('Family/zahra.png')">
+                    <h3>Aprilia Zahra</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="photo">
+            <h2><strong>MY AESTHETIC PHOTO</strong></h2>
+            <div class="photo-cards">
+                <div class="photo-card">
+                    <img src="Photo/1.jpeg" alt="1" class="photo-image"
+                        onclick="openModal('Photo/1.jpeg')">
+                    <h3>My Motor Guwah</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/2.jpeg" alt="2" class="photo-image"
+                        onclick="openModal('Photo/2.jpeg')">
+                    <h3>Pemandangan Kampus di Sore hari</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/3.jpeg" alt="3" class="photo-image"
+                        onclick="openModal('Photo/3.jpeg')">
+                    <h3>Masjid Agung Al-Karomah Martapura</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/4.jpeg" alt="4" class="photo-image"
+                        onclick="openModal('Photo/4.jpeg')">
+                    <h3>Pemandangan Kampus di Saat Senja</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/5.jpeg" alt="5" class="photo-image"
+                        onclick="openModal('Photo/5.jpeg')">
+                    <h3>Pemandangan di Tugu 17 Mei</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/6.jpeg" alt="6" class="photo-image"
+                        onclick="openModal('Photo/6.jpeg')">
+                    <h3>Pemandangan Jalan Km 6 Banjarmasin di Pagi Hari</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/7.jpeg" alt="7" class="photo-image"
+                        onclick="openModal('Photo/7.jpeg')">
+                    <h3>Pemandangan Kampus Bagian Belakang</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/8.jpeg" alt="8" class="photo-image"
+                        onclick="openModal('Photo/8.jpeg')">
+                    <h3>Pemandangan Kampus Bagian Samping</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/9.jpeg" alt="9" class="photo-image"
+                        onclick="openModal('Photo/9.jpeg')">
+                    <h3>Pemandangan Siring di Pagi Hari</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/10.jpeg" alt="10" class="photo-image"
+                        onclick="openModal('Photo/10.jpeg')">
+                    <h3>Pemandangan Sunset di Pantai</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/11.jpeg" alt="11" class="photo-image"
+                        onclick="openModal('Photo/11.jpeg')">
+                    <h3>Pemandangan Sunrise di Pantai</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/12.jpeg" alt="12" class="photo-image"
+                        onclick="openModal('Photo/12.jpeg')">
+                    <h3>Pemandangan Sungai di Pedesaan</h3>
+                </div>
+                <div class="photo-card">
+                    <img src="Photo/13.jpeg" alt="13" class="photo-image"
+                        onclick="openModal('Photo/13.jpeg')">
+                    <h3>Pemandangan Air Mancur Taman Kamboja di Malam Hari</h3>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="certificate">
+            <h2><strong>MY CERTIFICATE</strong></h2>
+            <div class="certificate-cards">
+                <div class="certificate-card">
+                    <img src="Certificate/studium3.png" alt="1" class="certificate-image"
+                        onclick="openModal('certificate/studium3.png')">>
+                    <h3>Mengikuti Studium Generale Fakultas</h3>
+                    <p>10 Februari 2026</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/Pakar.png" alt="1" class="certificate-image"
+                        onclick="openModal('certificate/Pakar.png')">>
+                    <h3>Mengikuti Kuliah Pakar TI</h3>
+                    <p>12 Januari 2026</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/lkk.png" alt="1" class="certificate-image"
+                        onclick="openModal('certificate/lkk.png')">>
+                    <h3>Mengikuti LKK UIN</h3>
+                    <p>17 November 2025</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/studium2.png" alt="1" class="certificate-image"
+                        onclick="openModal('certificate/studium2.png')">>
+                    <h3>Mengikuti Studium Generale Fakultas</h3>
+                    <p>10 September 2025</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/studium1.jpg" alt="1" class="certificate-image"
+                        onclick="openModal('certificate/studium1.jpg')">>
+                    <h3>Mengikuti Seminar Nasional</h3>
+                    <p>26 September 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/seminar.jpg" alt="2" class="certificate-image"
+                        onclick="openModal('certificate/seminar.jpg')">
+                    <h3>Mengikuti Seminar Internasional</h3>
+                    <p>11 September 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/studium.jpg" alt="3" class="certificate-image"
+                        onclick="openModal('certificate/studium.jpg')">
+                    <h3>Mengikuti Seminar Nasional</h3>
+                    <p>24 April 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/lomba.jpg" alt="4" class="certificate-image"
+                        onclick="openModal('certificate/lomba.jpg')">
+                    <h3>Mengikuti Lomba Cetozz Banjarmasin</h3>
+                    <p>24 November 2022</p>
+                </div>
+                <div class="certificate-card">
+                    <img src="Certificate/ksm.jpeg" alt="4" class="certificate-image"
+                        onclick="openModal('certificate/ksm.jpeg')">
+                    <h3>Harapan 2 Di Kompetisi Sains Madrasah Tahun 2020</h3>
+                    <p>24 Januari 2021</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="project">
             <section class="project-section">
                 <div class="project-header">
                     <h2 class="project-title">MY PROJECT</h2>
@@ -321,7 +698,7 @@
                             <h3 class="project-name">Sensor</h3>
                             <p class="project-desc">Membuat pintu otomatis menggunakan sensor gerakan, yang dimana saat
                                 didekati maka akan terbuka dan sebaliknya</p>
-                            <a href="#" class="project-btn" onclick="showComingSoon()">View Project</a>
+                            <a href="https://drive.google.com/file/d/1swqwj6hwZ9aWu0YVmHsZm0SaftXraaa_/view?usp=sharing" class="project-btn">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -338,7 +715,7 @@
     <!-- Modal untuk gambar besar -->
     <div id="imageModal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
+        <img class="modal-content" id="modalImage" src="" alt="">
     </div>
 
     </div>
