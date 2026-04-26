@@ -23,9 +23,10 @@
         <button class="nav-button" onclick="showTab('home')">Home</button>
         <button class="nav-button" onclick="showTab('achievement')">Achievement</button>
         <button class="nav-button" onclick="showTab('certificate')">Certificate</button>
-        <button class="nav-button" onclick="showTab('project')">Project</button>
+        <button class="nav-button" onclick="showTab('projects')">Project</button>
         <button class="nav-button" onclick="showTab('family')">Family</button>
         <button class="nav-button" onclick="showTab('photo')">Photo</button>
+        <button class="nav-button" onclick="showTab('library')">Library</button>
     </div>
 
     <div class="content">
@@ -870,53 +871,88 @@
                 </div>
             </div>
         </div>
-        <div class="tab-content" id="project">
-            <section class="project-section">
-                <div class="project-header">
-                    <h2 class="project-title">MY PROJECT</h2>
-                    <p class="project-subtitle">Kumpulan Project Project Yang Sudah Pernah dibuat</p>
+        <div id="projects" class="tab-content">
+            <div class="projects-container">
+
+                <div class="projects-hero">
+                    <h2>MY PROJECTS</h2>
+                    <p>Kumpulan Proyek yang Pernah Ku Kerjakan</p>
                 </div>
 
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="Project/Pro1.png" alt="Project 1" onclick="openModal('Project/Pro1.png')">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-name">Novel Store</h3>
-                            <p class="project-desc">Situs beli E-Novel yang dibuat oleh novelis yang sudah membuat
-                                kontrak dengan LunarScribe.
-                            </p>
-                            <a href="https://lunarscribestudios.github.io/LunarScribe/" class="project-btn">View
-                                Project</a>
+                <div class="projects-grid">
+
+                <!-- CARD 1 -->
+                    <div class="projects-card">
+                        <img src="Project/novel.png" alt="Cover Project Novel" class="projects-image" onclick="openModal(this.src)">
+                        
+                        <div class="projects-content">
+                            <h3>Membuat Software Jual beli E-Novel</h3>
+                            <p>Situs beli E-Novel yang dibuat oleh novelis yang sudah membuat kontrak dengan LunarScribe.</p>
+
+                            <div class="projects-meta">
+                                <span>📅 2025</span>
+                                <span>✅ Success</span>
+                                <span>💻 Software</span>
+                            </div>
+
+                            <a href="https://lunarscribestudios.github.io/LunarScribe/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="btn-read">
+                                Lihat Website →
+                            </a>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="Project/iot.jpg" alt="Project 2" onclick="openModal('Project/iot.jpg')">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-name">Termometer</h3>
-                            <p class="project-desc">Membuat termometer menggunakan esp yang ip nya dikirim ke user
-                                interface</p>
-                            <a href="#" class="project-btn" onclick="showComingSoon()">View Project</a>
+                    <!-- CARD 2 -->
+                    <div class="projects-card">
+                        <img src="Project/mikro.jpg" alt="Cover Project Mikrokontroler" class="projects-image" onclick="openModal(this.src)">
+                        
+                        <div class="projects-content">
+                            <h3>Membuat Pintu Otomatis</h3>
+                            <p>Membuat pintu otomatis menggunakan sensor gerakan, yang dimana saat didekati maka akan terbuka dan sebaliknya</p>
+
+                            <div class="projects-meta">
+                                <span>📅 2025</span>
+                                <span>✅ Success</span>
+                                <span>🛞 Mikrokontroler</span>
+                            </div>
+
+                            <a href="https://drive.google.com/file/d/1swqwj6hwZ9aWu0YVmHsZm0SaftXraaa_/view?usp=sharing" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="btn-read">
+                                Lihat Video →
+                            </a>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="Project/mikro.jpg" alt="Project 3" onclick="openModal('Project/mikro.jpg')">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-name">Sensor</h3>
-                            <p class="project-desc">Membuat pintu otomatis menggunakan sensor gerakan, yang dimana saat
-                                didekati maka akan terbuka dan sebaliknya</p>
-                            <a href="https://drive.google.com/file/d/1swqwj6hwZ9aWu0YVmHsZm0SaftXraaa_/view?usp=sharing" class="project-btn">View Project</a>
+                    <!-- CARD 3 -->
+                    <div class="projects-card">
+                        <img src="Project/iot.jpg" alt="Cover Project IoT" class="projects-image" onclick="openModal(this.src)">
+                        
+                        <div class="projects-content">
+                            <h3>Membuat Termometer Menggunakan Mikrokontroler</h3>
+                            <p>Membuat termometer menggunakan esp yang ip nya dikirim ke user interface</p>
+
+                            <div class="projects-meta">
+                                <span>📅 2025</span>
+                                <span>✅ Success</span>
+                                <span>📡 Internet of Things</span>
+                            </div>
+
+                            <a href="#"
+                                rel="noopener noreferrer"
+                                class="btn-read"
+                                onclick="showComingSoon()">
+                                Lihat Project →
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
 
             <div class="project-overlay" id="projectOverlay">
                 <div class="project-modal">
@@ -926,6 +962,89 @@
                 </div>
             </div>
         </div>
+
+        <div id="library" class="tab-content">
+            <div class="library-container">
+
+                <div class="library-hero">
+                    <h2>MY LIBRARY</h2>
+                    <p>Kumpulan Artikel & E-Book yang Pernah Ku Buat</p>
+                </div>
+
+                <div class="library-grid">
+
+                <!-- CARD 1 -->
+                    <div class="library-card">
+                        <img src="Library/Artikel2.png" alt="Cover artikel 2" class="library-image" onclick="openModal(this.src)">
+                        
+                        <div class="library-content">
+                            <h3> Perancangan Model Sistem Monitoring Lingkungan Berbasis Teknologi Mikro Untuk Mendukung Transformasi Perilaku Masyarakat</h3>
+                            <p>Penelitian ini merancang model sistem monitoring lingkungan berbasis teknologi mikro menggunakan ESP32 dan sensor ultrasonik untuk pemantauan tingkat kepenuhan tempat sampah secara real-time.</p>
+
+                            <div class="library-meta">
+                                <span>📅 2026</span>
+                                <span>✅ Success</span>
+                                <span>📰 Artikel</span>
+                            </div>
+
+                            <a href="https://docs.google.com/document/d/1pkdiyU1xA83WDxI4IF7g0y2UeMFj_lps/edit?usp=sharing&ouid=107464808727448974202&rtpof=true&sd=true" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="btn-read">
+                                Lihat Artikel →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="library-card">
+                        <img src="Library/E-Book1.png" alt="Cover E-Book 1" class="library-image" onclick="openModal(this.src)">
+                        
+                        <div class="library-content">
+                            <h3>Instalasi, Konfigurasi, dan Penggunaan untuk Pemula hingga Menengah</h3>
+                            <p>Buku ini disusun sebagai panduan pembelajaran Raspberry Pi yang terstruktur, jelas, dan mudah dipahami, khususnya bagi pemula yang ingin mengenal dan menggunakan Raspberry Pi secara optimal. Setiap bagian dirancang untuk saling melengkapi, mulai dari pengenalan dasar hingga penerapan dan perawatan perangkat.</p>
+
+                            <div class="library-meta">
+                                <span>📅 2025</span>
+                                <span>✅ Success</span>
+                                <span>📘 E-Book</span>
+                            </div>
+
+                            <a href="https://drive.google.com/file/d/1BdL2v0wfaYhZm5ntrWdKiQA_Rw_wbXOG/view?usp=sharing" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="btn-read">
+                                Lihat E-Book →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="library-card">
+                        <img src="Library/Artikel1.png" alt="Cover Artikel 1" class="library-image" onclick="openModal(this.src)">
+                        
+                        <div class="library-content">
+                            <h3>Perjalanan dari 1I/ʻOumuamua ke 3I/ATLAS yang Mengubah Pandangan Astronomi Modern</h3>
+                            <p>Studi terhadap benda atau objek antar-bintang salah satu bidang yang paling menarik dalam astronomi modern karena kemunculannya memberikan bukti langsung tentang proses pembentukan planet dan dinamika sistem bintang di luar Tata Surya.</p>
+
+                            <div class="library-meta">
+                                <span>📅 2025</span>
+                                <span>🔄 Progress</span>
+                                <span>📰 Artikel</span>
+                            </div>
+
+                            <a href="https://docs.google.com/document/d/11BWzJOX8b0Yd8zPPOf32BepEezWGZwMH/edit?usp=sharing&ouid=107464808727448974202&rtpof=true&sd=true" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="btn-read">
+                                Lihat Artikel →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal untuk gambar besar -->
     <div id="imageModal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
