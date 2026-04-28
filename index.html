@@ -24,7 +24,7 @@
         <button class="nav-button" onclick="showTab('achievement')">Achievement</button>
         <button class="nav-button" onclick="showTab('certificate')">Certificate</button>
         <button class="nav-button" onclick="showTab('projects')">Project</button>
-        <button class="nav-button" onclick="showTab('family')">Family</button>
+        <button class="nav-button" onclick="showTab('character')">Favorite Character</button>
         <button class="nav-button" onclick="showTab('photo')">Photo</button>
         <button class="nav-button" onclick="showTab('library')">Library</button>
     </div>
@@ -60,6 +60,13 @@
                 <!-- Content Box Section -->
                 <div class="content-box active-content" id="tab1">
                     <div class="scroll-container">
+                        <div class="news-item">
+                            <img src="Daily/spasial.png" alt="Daily Image" onclick="openModal('Daily/viewer.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Mengikuti Mata Kuliah Spasial</p>
+                                <p class="news-time">Selasa, 28 April 2026</p>
+                            </div>
+                        </div>
                         <div class="news-item">
                             <img src="Daily/viewer.png" alt="Daily Image" onclick="openModal('Daily/viewer.png')">>
                             <div class="news-content">
@@ -260,6 +267,13 @@
                 </div>
                 <div class="content-box" id="tab2">
                     <div class="scroll-container">
+                        <div class="news-item">
+                            <img src="Daily/bengkel.png" alt="Daily Image" onclick="openModal('Daily/viewer.png')">>
+                            <div class="news-content">
+                                <p class="news-title">Ke Bengkel Bjir</p>
+                                <p class="news-time">Selasa, 28 April 2026</p>
+                            </div>
+                        </div>
                         <div class="news-item">
                             <img src="Daily/update.png" alt="Daily Image" onclick="openModal('Daily/update.png')">>
                             <div class="news-content">
@@ -705,28 +719,32 @@
                 </div>
             </div>
         </div>
-        <div class="tab-content" id="family">
-            <h2><strong>MY FAMILY</strong></h2>
-            <div class="family-cards">
-                <div class="family-card">
-                    <img src="Family/rama.png" alt="1" class="family-image"
-                        onclick="openModal('Family/rama.png')">>
-                    <h3>Muhammad Ade Ramadhani</h3>
+        <div class="tab-content" id="character">
+            <h2><strong>MY FAVORITE CHARACTER</strong></h2>
+            <div class="character-cards">
+                <div class="character-card">
+                    <img src="Character/Furina.png" alt="1" class="character-image"
+                        onclick="openModal('Character/Furina.png')">>
+                    <h3>Furina de Fontaine</h3>
+                    <p>Genshin Impact</p>
                 </div>
-                <div class="family-card">
-                    <img src="Family/nisa.png" alt="2" class="family-image"
-                        onclick="openModal('Family/nisa.png')">
-                    <h3>Raudatunnisa</h3>
+                <div class="character-card">
+                    <img src="Character/elfi.png" alt="2" class="character-image"
+                        onclick="openModal('Character/elfi.png')">
+                    <h3>Elfaria Albis Serfort</h3>
+                    <p>Wistoria</p>
                 </div>
-                <div class="family-card">
-                    <img src="Family/putri.png" alt="3" class="family-image"
-                        onclick="openModal('Family/putri.png')">
-                    <h3>Putri Rahmawati</h3>
+                <div class="character-card">
+                    <img src="Character/mutsumi.jpg" alt="3" class="character-image"
+                        onclick="openModal('Character/mutsumi.jpg')">
+                    <h3>Mutsumi Yozakura</h3>
+                    <p>Yozakura Family</p>
                 </div>
-                <div class="family-card">
-                    <img src="Family/zahra.png" alt="4" class="family-image"
-                        onclick="openModal('Family/zahra.png')">
-                    <h3>Aprilia Zahra</h3>
+                <div class="character-card">
+                    <img src="Character/lelouch.png" alt="4" class="character-image"
+                        onclick="openModal('Character/lelouch.png')">
+                    <h3>Lelouch vi Britannia</h3>
+                    <p>Code Geass</p>
                 </div>
             </div>
         </div>
