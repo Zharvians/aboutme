@@ -232,11 +232,72 @@ h3 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.achievement-image, .certificate-image, .photo-image, .character-image {
+.achievement-image, .certificate-image, .photo-image {
   width: 80%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 15px;
+}
+
+.character-image {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Nama Game / Anime */
+.character-card p:nth-of-type(1) {
+    font-size: 14px;
+    color: #8b6cff; /* ungu soft biar nyatu sama vibe */
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    opacity: 0.85;
+}
+
+/* Quotes */
+.character-card p:nth-of-type(2) {
+    font-size: 13px;
+    color: #57b1fb;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 8px 12px;
+    border-left: 3px solid #8b6cff;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+}
+
+.character-card p:nth-of-type(2)::before {
+    content: "“";
+    font-size: 20px;
+    color: #8b6cff;
+}
+
+.character-card p:nth-of-type(2)::after {
+    content: "”";
+    font-size: 20px;
+    color: #8b6cff;
+}
+
+.character-source a {
+    position: relative;
+}
+
+.character-source a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: #8b6cff;
+    transition: 0.3s;
+}
+
+.character-source a:hover::after {
+    width: 100%;
 }
 
 .achievement-card h3, .certificate-card h3, .photo-card h3, .character-card h3 {
