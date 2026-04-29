@@ -6,6 +6,33 @@ function showTab(tabId) {
     document.getElementById(tabId).style.display = 'block';
 }
 
+const songs = [
+    "Music/everythinguare.mp3",
+    "Music/tarot.mp3",
+    "Music/cincin.mp3"
+];
+
+let index = 0;
+const player = document.getElementById("bg-music");
+
+player.volume = 0.1;
+player.src = songs[index];
+
+// trigger dari berbagai interaksi
+function startMusic() {
+    player.play().catch(() => {});
+}
+
+document.addEventListener("click", startMusic, { once: true });
+document.addEventListener("scroll", startMusic, { once: true });
+document.addEventListener("keydown", startMusic, { once: true });
+
+player.addEventListener("ended", () => {
+    index = (index + 1) % songs.length;
+    player.src = songs[index];
+    player.play();
+});
+
 // profil.js
 function showTab(tabId) {
     // Ambil semua elemen dengan kelas 'tab-content'
@@ -93,4 +120,3 @@ function showComingSoon() {
 function closeComingSoon() {
     document.getElementById('projectOverlay').style.display = 'none';
 }
-
